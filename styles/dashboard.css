@@ -1,0 +1,93 @@
+/* Styling for the dashboard card container */
+.dashboard-card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for a raised effect */
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; /* Adjust height to fit content */
+  width: 100%; /* Ensure full width */
+  max-width: 300px; /* Max width for the card */
+  margin-bottom: 20px; /* Adds bottom space between cards */
+}
+
+/* Title Styling */
+.dashboard-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #353535;
+  margin-bottom: 10px; /* Adds space between the title and value */
+}
+
+/* Value Styling */
+.dashboard-card .value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px; /* Adds space between the title and value */
+}
+
+/* Styling for the dashboard card container */
+.dashboard-card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; /* Adjust height to fit content */
+  width: 100%; /* Ensure full width */
+  max-width: 300px; /* Max width for the card */
+}
+
+/* Value Styling */
+.dashboard-card .value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px; /* Adds space between the title and value */
+}
+
+/* Styling for the bar chart container */
+.bar-chart-container, .line-chart-container {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the chart */
+  margin-top: 20px; /* Adds space between the chart and the value */
+}
+
+/* Flexbox Container for the Cards */
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds gap between cards */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+
+
+/* Flexbox Container for the Cards */
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds gap between cards */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+
+/* Dashboard Card Responsive Styling */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-card {
+    max-width: 100%;
+    margin-bottom: 20px; /* Adds space between stacked cards */
+  }
+}

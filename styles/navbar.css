@@ -1,0 +1,124 @@
+/* Navbar layout */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 250px; /* Sidebar width */
+  width: calc(100% - 250px); /* Full width minus sidebar */
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Sort label and dropdown button in a straight line */
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add gap between the label and the button */
+}
+
+.sort-label {
+  font-size: 16px;
+  color: #353535; /* Dark color for the label */
+}
+
+.dropdown-btn {
+  background-color: #5a57ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #4440b0;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 55px; /* Adjust to position below the button */
+  left: 40px; /* Added offset to the right */
+  background-color: white;
+  border: 1px solid #a5a2f0; /* Lighter shade of purple */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  z-index: 1000;
+  text-align: center; /* Center the text inside the menu */
+  display: none; /* Hide by default */
+}
+
+/* Show dropdown when open */
+.dropdown.open .dropdown-menu {
+  display: block; /* Show the dropdown menu when open */
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.dropdown-menu ul li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f0f0f0;
+}
+
+/* User Info layout */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #cccccc;
+}
+
+.online-indicator {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50; /* Green color */
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #353535;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #cccccc;
+}

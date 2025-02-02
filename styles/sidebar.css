@@ -1,0 +1,150 @@
+/* Sidebar layout */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #5A57FF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures that the footer buttons are at the bottom */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  align-items: center; /* Aligns everything in the center horizontally */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar-header h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Sidebar Buttons */
+.sidebar-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Centers the sidebar buttons horizontally */
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center; /* Align icon and text in a row */
+  gap: 10px; /* Space between icon and text */
+  padding: 12px;
+  font-size: 20px; /* Increased font size by 2 points */
+  color: white;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  width: 100%; /* Ensures button spans across the full sidebar width */
+  text-align: left; /* Aligns text to the left */
+}
+
+.sidebar-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.sidebar-btn i {
+  font-size: 22px; /* Increase icon size */
+}
+
+/* Footer Buttons (Settings and Logout) */
+.settings-logout-btns {
+  margin-top: auto; /* Pushes these buttons to the bottom of the sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between buttons */
+  align-items: center; /* Aligns the footer buttons in the center */
+}
+
+.settings-logout-btn {
+  padding: 15px;
+  font-size: 20px; /* Increased font size for Settings and Logout */
+  color: white;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  width: 100%; /* Ensures the button spans the full width */
+}
+
+.settings-logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.settings-logout-btn i {
+  font-size: 22px; /* Increase icon size */
+}
+
+/* Align icons and text in sidebar buttons */
+.sidebar-btns .sidebar-btn {
+  align-items: center; /* Ensures icon and text stay on the same line */
+  text-align: left; /* Left-align text next to the icon */
+}
+
+.sidebar-btns .sidebar-btn i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.sidebar-btns .sidebar-btn span {
+  font-size: 16px; /* Adjusted text size */
+  text-transform: capitalize; /* Capitalize the text */
+}
+
+/* Sidebar Footer Adjustment */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto; /* Keeps the logout and settings buttons at the bottom */
+}
+
+
+/* Footer Buttons (Settings and Logout) */
+.settings-logout-btns {
+  margin-top: auto; /* Pushes these buttons to the bottom of the sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between buttons */
+  align-items: center; /* Aligns the footer buttons in the center */
+}
+
+.settings-logout-btn {
+  display: flex;
+  align-items: center; /* Align icon and text in a row */
+  gap: 10px; /* Space between icon and text */
+  padding: 15px;
+  font-size: 20px; /* Increased font size for Settings and Logout */
+  color: white;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  width: 100%; /* Ensures the button spans the full width */
+}
+
+.settings-logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.settings-logout-btn i {
+  font-size: 22px; /* Increase icon size */
+}
+
+.settings-logout-btn span {
+  font-size: 16px; /* Adjusted text size */
+  text-transform: capitalize; /* Capitalize the text */
+}
