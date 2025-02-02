@@ -1,10 +1,10 @@
 import { Bar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ChartOptions } from 'chart.js';
 
 // Register necessary components for Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const BarChart = () => {
+const BarChart: React.FC = () => {
   // Dummy data for the bar chart
   const data = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], // X-axis labels
@@ -18,16 +18,16 @@ const BarChart = () => {
     ],
   };
 
-  // Chart options
-  const options = {
+  // Correctly typed Chart options
+  const options: ChartOptions<'bar'> = {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top' as const,
+        position: 'top',
       },
       tooltip: {
         callbacks: {
-          label: (tooltipItem: any) => `Rs. ${tooltipItem.raw}`,
+          label: (tooltipItem) => `Rs. ${tooltipItem.raw}`,
         },
       },
     },
